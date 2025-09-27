@@ -1,1 +1,179 @@
-This is my webpage!
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav, footer {
+            background-color: #d4f2f4;
+            color: #0b0848;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #0b0848;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        #introduction {
+            background-color: #F3FDE8;
+        }
+
+        #contact {
+            background-repeat: repeat;
+            color: white;
+            text-align: left;
+        }
+        
+        .section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            font-size: 24px;
+            text-shadow: 1px 1px 2px black
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .avatar {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0;
+            text-align: left;
+        }
+     
+    </style>
+    <div>
+        <h1>Giới thiệu bản thân</h1>
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/into-the-mist-bror-johansson.jpg" alt="Fine Art" width="900" height="568">
+        <h2>Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Thiều Đinh Nam Tài</li>
+            <li>MSSV: 23521378</li>
+            <li>Năm sinh: 2005</li>
+            <li>Chuyên ngành: Hệ thống thông tin</li>
+        </ul>
+        <h2>Sở thích</h2>
+        <h3>Món ăn</h3>
+        <ol>
+            <li>Phở</li>
+            <li>Bánh mì bơ sữa</li>
+            <li>Cơm tấm</li>
+        </ol>
+        <h4>Giải trí</h4>
+        <ul>
+            <li>Hiphop</li>
+            <li>K-Hiphop</li>
+            <li>Nhạc cổ điển</li>
+        </ul>
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>CS:GO</li>
+            <li>Hollow Knight: Silksong</li>
+            <li>Dota 2</li>
+        </ul>
+        <h4>Bài hát yêu thích</h4>
+        <ul>
+            <li>Đôi Mắt - Wanbi Tuấn Anh</li>
+            <li>Vụt Mất - Wanbi Tuấn Anh</li>
+            <li>Trouble Maker - Trouble Maker</li>
+        </ul>
+        <h2>Mục tiêu của bản thân</h2>
+        <table>
+            <tr>
+                <th>Mục tiêu</th>
+                <th>Thời hạn</th>
+                <th>Hoàn thành</th>
+            </tr>
+            <tr>
+                <td>Đọc 1 cuốn sách</td>
+                <td>20/11/2025</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Tìm hiểu học thuyết trí thông minh của Gardner</td>
+                <td>30/01/2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Phân tích cấu trúc tâm lý con người của Carl Jung</td>
+                <td>31/07/2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>Gửi thông tin và giao lưu cùng tôi</h1>
+        <h2>Thông tin liên hệ</h2>
+        <ul>
+            <li></li>
+            <li>Email: 23521378@gm.uit.edu.vn</li>
+            <li>Số điện thoại: 0912345678</li>
+            <li>Facebook: facebook.com/AmaranthineAngelica</li>
+        </ul>
+        <h2>Gửi thông tin qua form</h2>
+        <form> 
+            <label for="fullname">Họ và tên:</label> 
+            <input type="text" name="fullname"><br><br>
+            <label for="email">Email:</label> 
+            <input type="text" name="email"><br><br>
+            <label for="message">Tin nhắn:</label><br>
+            <textarea name="message" rows="4", cols="50"></textarea><br><br>
+            <label for="gender">Giới tính:</label><br>
+            <input type="radio" name="gender">
+            <label id="1" for="gender">Nam</label>
+            <input type="radio" name="gender">
+            <label id="2" for="Gender">Nữ</label><br><br>
+            <label for="hobby">Sở thích:</label><br>
+            <input type="checkbox" name="hobby">
+            <label id="1" for="hobby">Nghe nhạc</label>
+            <label id="2" for="hobby">Bơi lội</label>
+            <label id="3" for="hobby">Biển</label><br><br>
+            <label for="major">Ngành:</label>
+            <select>
+                <option value="AI">Trí tuệ nhân tạo</option>
+                <option value="CS">Khoa học máy tính</option>
+                <option value="DS">Khoa học dữ liệu</option>
+                <option value="IS">Hệ thống thông tin</option>
+                <option value="EC">Thương mại điện tử</option>
+                <option value="CE">Kỹ thuật máy tính</option>
+                <option value="SE">Công nghệ phần mềm</option>
+                <option value="MM">Truyền thông đa phương tiện</option>
+                <option value="NT">An toàn thông tin</option>
+            </select><br><br>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+</html>
