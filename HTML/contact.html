@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
     <head>
-        <title>Tai Thieu's Personal Website</title>
-        <link rel="stylesheet" type="text/css" href="/Web/CSS/style.css">
+        <title>Tai Thieu's Personal Website - Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <nav>
+            <a href="/Web/HTML/intro.html">Giới thiệu bản thân</a>
+            <a href="/Web/HTML/contact.html">Gửi thông tin và giao lưu cùng tôi</a>
+        </nav>
+
         <div id="contact">
             <h1>Gửi thông tin và giao lưu cùng tôi</h1>
             <h2>Thông tin liên hệ</h2>
@@ -14,45 +21,35 @@
                 <li>Facebook: facebook.com/AmaranthineAngelica</li>
             </ul>
             <h2>Gửi thông tin qua form</h2>
-            <form> 
-                <label for="fullname">Họ và tên:</label> 
-                <input type="text" name="fullname"><br><br>
-                <label for="email">Email:</label> 
-                <input type="text" name="email"><br><br>
-                <label for="message">Tin nhắn:</label><br>
-                <textarea name="message" rows="4", cols="50"></textarea><br><br>
-                <label for="gender">Giới tính:</label><br>
-                <input type="radio" name="gender">
-                <label id="1" for="gender">Nam</label>
-                <input type="radio" name="gender">
-                <label id="2" for="Gender">Nữ</label><br><br>
-                <label for="hobby">Sở thích:</label><br>
-                <input type="checkbox" name="music">
-                <label id="1" for="music">Nghe nhạc</label>
-                <input type="checkbox" name="swimming">
-                <label id="2" for="swimming">Bơi lội</label>
-                <input type="checkbox" name="sea">
-                <label id="3" for="sea">Biển</label><br><br>
-                <label for="major">Ngành:</label>
-                <select>
-                    <option value="AI">Trí tuệ nhân tạo</option>
-                    <option value="CS">Khoa học máy tính</option>
-                    <option value="DS">Khoa học dữ liệu</option>
-                    <option value="IS">Hệ thống thông tin</option>
-                    <option value="EC">Thương mại điện tử</option>
-                    <option value="CE">Kỹ thuật máy tính</option>
-                    <option value="SE">Công nghệ phần mềm</option>
-                    <option value="MM">Truyền thông đa phương tiện</option>
-                    <option value="NT">An toàn thông tin</option>
-                </select><br><br>
+            <form id="contact-form" novalidate>
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" id="fullname" name="fullname">
+                <p class="error-message" id="fullname-error"></p>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <p class="error-message" id="email-error"></p>
+
+                <label for="message">Nội dung/Góp ý:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <p class="error-message" id="message-error"></p>
+
+                <label>Giới tính:</label><br>
+                <input type="radio" id="gender-male" name="gender" value="male">
+                <label for="gender-male">Nam</label>
+                <input type="radio" id="gender-female" name="gender" value="female">
+                <label for="gender-female">Nữ</label><br><br>
+                
                 <button type="submit">Gửi</button>
             </form>
         </div>
 
+        <button id="backToTopBtn" title="Lên đầu trang">Top</button>
+
         <footer>
             <p>@2025 23521378 Thiều Đinh Nam Tài</p>
         </footer>
-        
-        <script src="/Web/JS/script.js"></script>
+
+        <script src="script.js"></script>
     </body>
 </html>
